@@ -85,8 +85,6 @@ const App = () => {
     currentYear
   ]);
 
-  const handleCloseModalDisclaimer = () => setShowModalDisclaimer(false);
-
   const handleCloseModalUpload = () => setShowModalUpload(false);
   const handleShowModalUpload = () => setShowModalUpload(true);
 
@@ -330,8 +328,8 @@ const App = () => {
       </Container>
 
       {/* Modal Dislaimer */}
-      <Modal show={showModalDisclaimer} onHide={handleCloseModalDisclaimer}>
-        <Modal.Header closeButton>
+      <Modal show={showModalDisclaimer}>
+        <Modal.Header>
           <Modal.Title>Avviso per l'utente</Modal.Title>
         </Modal.Header>
         <Modal.Body>
